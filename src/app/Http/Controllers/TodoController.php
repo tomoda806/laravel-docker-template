@@ -46,6 +46,7 @@ class TodoController extends Controller
     {
         $todo = $this->todo->find($id);
         // dd($todo);
+        // echo $todo->toSql();
         return view('todo.edit', ['todo' => $todo]);
     }
 
