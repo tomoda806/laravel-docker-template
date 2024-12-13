@@ -3,7 +3,7 @@
 ## Todo一覧機能
 
 ### Todoモデルのallメソッドで実行しているSQLは何か
-全レコードを取得するSELECTクエリ。
+全レコードを取得するSELECTクエリ。(SELECT * FROM todos;)
 
 ### Todoモデルのallメソッドの返り値は何か
 Collectionクラスのインスタンス。Todoインスタンスが格納されていて、各レコードに対応したTodoインスタンスを取得する。
