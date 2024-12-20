@@ -44,7 +44,9 @@ class TodoController extends Controller
 
     public function edit($id)
     {
+        // \DB::enableQueryLog();
         $todo = $this->todo->find($id);
+        // dd(\DB::getQueryLog());
         // dd($todo);
         // echo $todo->toSql();
         return view('todo.edit', ['todo' => $todo]);
